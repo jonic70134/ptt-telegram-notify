@@ -2,7 +2,7 @@ name: PTT Telegram Notify
 
 on:
   schedule:
-    - cron: '*/5 * * * *'  # 每5分鐘執行一次
+    - cron: '*/3 * * * *'  # 每5分鐘執行一次
   workflow_dispatch:      # 允許手動執行
 
 jobs:
@@ -25,7 +25,7 @@ jobs:
 
       - name: Run PTT Telegram Notify
         env:
-          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
-          CHAT_ID: ${{ secrets.CHAT_ID }}
+          BOT_TOKEN: ${{ secrets.8482553745:AAHM7PxZNJg9j7ot7u88nAqJURchOSAnNp8 }}
+          CHAT_ID: ${{ secrets.7701043479 }}
         run: |
           python ptt_telegram_notify.py
