@@ -2,7 +2,7 @@ name: PTT Telegram Notify
 
 on:
   schedule:
-    - cron: '*/5 * * * *'  # 每5分鐘執行一次
+    - cron: '*/3 * * * *'  # 每5分鐘執行一次
   workflow_dispatch:      # 允許手動執行
 
 jobs:
