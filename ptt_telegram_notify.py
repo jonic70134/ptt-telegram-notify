@@ -12,9 +12,9 @@ LAST_FILE = 'last_articles.txt'
 
 # ✅ 加上這個函式的定義
 def send_telegram_message(message):
-    url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
+    url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
     data = {
-        "chat_id": TELEGRAM_CHAT_ID,
+        "chat_id": CHAT_ID,
         "text": message,
         "parse_mode": "HTML"
     }
