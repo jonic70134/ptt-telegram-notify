@@ -10,7 +10,17 @@ PTT_BOARDS = ['carshop', 'car']  # ← 可放多個看板
 LAST_FILE = 'last_articles.txt'
 # ===========================
 
-# 發送測試訊息（每次執行都會推送）
+# ✅ 加上這個函式的定義
+def send_telegram_message(message):
+    url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
+    data = {
+        "chat_id": TELEGRAM_CHAT_ID,
+        "text": message,
+        "parse_mode": "HTML"
+    }
+    requests.post(url, data=data)
+
+# ✅ 發送測試訊息
 now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 send_telegram_message(f"📬 Bot 每日檢查中：{now}")
 
