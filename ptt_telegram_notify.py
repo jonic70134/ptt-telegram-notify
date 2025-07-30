@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import os
+import datetime
 
 # ========== 設定區 ==========
 BOT_TOKEN = '8482553745:AAHM7PxZNJg9j7ot7u88nAqJURchOSAnNp8'
