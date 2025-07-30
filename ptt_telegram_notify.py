@@ -9,6 +9,7 @@ PTT_BOARDS = ['carshop', 'car']  # ← 可放多個看板
 LAST_FILE = 'last_articles.txt'
 # ===========================
 
+
 def get_latest_article(board):
     url = f"https://www.ptt.cc/bbs/{board}/index.html"
     res = requests.get(url, cookies={'over18': '1'})
