@@ -9,6 +9,9 @@ PTT_BOARDS = ['carshop', 'car']  # ← 可放多個看板
 LAST_FILE = 'last_articles.txt'
 # ===========================
 
+# 發送測試訊息（每次執行都會推送）
+now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+send_telegram_message(f"📬 Bot 每日檢查中：{now}")
 
 def get_latest_article(board):
     url = f"https://www.ptt.cc/bbs/{board}/index.html"
