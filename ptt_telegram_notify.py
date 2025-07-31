@@ -62,7 +62,7 @@ def main():
         if not title:
             continue
 
-        if board not in last_articles or last_articles[board] != title:
+        if True:
             msg = f"<b>[{board}] 有新文章：</b>\n{title}\n🔗 <a href=\"{link}\">{link}</a>"
             send_telegram_message(msg)
             new_articles[board] = title
