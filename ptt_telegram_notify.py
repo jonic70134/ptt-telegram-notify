@@ -6,7 +6,7 @@ import datetime
 # ========= 設定區 =========
 BOT_TOKEN = os.environ.get('8482553745:AAHM7PxZNJg9j7ot7u88nAqJURchOSAnNp8')
 CHAT_ID = os.environ.get('7701043479')
-PTT_BOARDS = ['carshop', 'car']
+PTT_BOARDS = ['CarShop', 'car']
 # ==========================
 
 # ✅ 儲存記憶在 Telegram pinned message 中的方式
